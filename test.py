@@ -11,6 +11,8 @@ pt2 = sphere( size=vector(0.15,0.15,0.15),color=vector(0,0,1),pos=vector(f1_2x,f
 
 pt3 = sphere( size=vector(0.15,0.15,0.15),color=vector(0,0,1),pos=vector(f1_3x,f1_3y,f1_3z) ) # 2,0,0
 
+
+
 def vectorParser(vec):
     print(f"Vector : {vec}")
     return(list(map(float,((str(vec).replace("<","")).replace(">","")).split(","))))
