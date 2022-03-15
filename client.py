@@ -3,9 +3,16 @@ import time
 
 sio = socketio.Client()
 
+
 @sio.event
 def connect():
     print("Connected to Server")
+    time.sleep(5)
+    sio.emit("hi",{
+        "Python Puli" : "Pervez",
+        "C++ Singam" : "Sriraman",
+        "Java" : "Ulagaraja"
+    })
     time.sleep(5)
     sio.disconnect()
 
